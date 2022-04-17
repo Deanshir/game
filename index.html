@@ -1,0 +1,75 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>המערב הפרוע</title>
+    <meta name="description" content="name of game" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="names" />
+
+    <!-- CSS -->
+    <link href="Styles/gameStyle.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <!--jQuery library-->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <!--הקוד שמפעיל את תפריט הניווט-->
+    <script src="jScripts/myScript-game_WildWest.js"></script>
+
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="icon" sizes="32X32" href="favicon/favicon-32x32.png" />
+    <link rel="icon" sizes="16x16" href="favicon/favicon-16x16.png" />
+
+</head>
+
+
+<body>
+    <div id="container">
+        <header>
+            <!--קישור לדף עצמו כדי להתחיל את המשחק מחדש בלחיצה על הלוגו-->
+            <a href="index.html">
+                <img id="logo" src="image/Logo.png" width="150" /> <!--הלוגו של המשחק שלכם-->
+
+            </a>
+            <!--תפריט הניווט בראש העמוד-->
+            <nav>
+                <ul>
+                    <li><a id="about">אודות</a></li>
+                    <li><a id="howToPlay">איך משחקים?  |</a></li>
+                    <li><a id="editor" href="login.aspx">עורך  |</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="aboutDiv" class="popUp bounceInDown hide">
+            <a class="closeAbout">X</a>
+            <div>
+                <img src="image/aboutUs-03.png" width="1000" />
+            </div>
+
+            <a href="https://www.hit.ac.il/telem/overview">
+                <div class="link">הפקולטה לטכנולוגיות למידה</div>
+            </a>
+            <div class="link2">
+                במשחק זה נעשה שימוש בגרפיקות מאתר <a href="https://www.freepik.com/">freepik</a>
+            </div>
+        </div>
+        <div id="howToPlayDiv" class="popUp bounceInDown hide">
+            <a class="closeHowToPlay">X</a>
+            <img src="image/howToPlay-03.png" width="1000" />
+        </div>
+
+
+
+
+        <div id="gameArea" class="">
+            <!--src = הקישור של דף המשחק שלכם (לא קובץ האנימייט)-->
+            <iframe id="gameIframe" src="game.html" frameBorder="0" allowfullscreen="">Browser not compatible.</iframe>
+        </div>
+    </div>
+</body>
+
+
+</html>
