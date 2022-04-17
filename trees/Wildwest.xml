@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WildWestGame>
+  <Game GameCode="1001" isPublish="False" timePerQuest="30">
+    <GameSubject>חשבון - אחוזים</GameSubject>
+    <questions>
+      <question id="1">
+        <questionText>כמה הם 30% מתוך 50?</questionText>
+        <img>
+        </img>
+        <answers>
+          <answer idAns="0" AnsType="txt" feedback="true">15</answer>
+          <answer idAns="1" AnsType="txt" feedback="false">30</answer>
+          <answer idAns="2" AnsType="txt" feedback="false">10</answer>
+          <answer idAns="3" AnsType="txt" feedback="false">לא ניתן לדעת</answer>
+          <answer idAns="4" AnsType="txt" feedback="false">20</answer>
+        </answers>
+      </question>
+      <question id="2">
+        <questionText>בכתה 32 תלמידים, 25% מתוכם גבוהים מ 125 ס"מ. כמה תלמידים בכתה גבוהים מ 125 ס"מ?</questionText>
+        <img>
+        </img>
+        <answers>
+          <answer idAns="0" AnsType="txt" feedback="true">8 תלמידים</answer>
+          <answer idAns="1" AnsType="txt" feedback="false">7 תלמידים</answer>
+          <answer idAns="2" AnsType="txt" feedback="false">25 תלמידים</answer>
+          <answer idAns="3" AnsType="txt" feedback="false">10 תלמידים</answer>
+        </answers>
+      </question>
+      <question id="3">
+        <questionText>10 מוצרים הם 20% ממוצרי החנות, כמה מוצרים יש בחנות בסך הכל?</questionText>
+        <img>
+        </img>
+        <answers>
+          <answer idAns="0" AnsType="txt" feedback="true">50 מוצרים</answer>
+          <answer idAns="1" AnsType="txt" feedback="false">100 מוצרים</answer>
+          <answer idAns="2" AnsType="txt" feedback="false">10 מוצרים</answer>
+          <answer idAns="3" AnsType="txt" feedback="false">30 מוצרים</answer>
+        </answers>
+      </question>
+      <question id="4">
+        <questionText>כמה אחוזים מייצג החלק הכתום בעוגה?</questionText>
+        <img>06_07_21-20_53_06_05600.png</img>
+        <answers>
+          <answer idAns="0" AnsType="txt" feedback="true">30%</answer>
+          <answer idAns="1" AnsType="txt" feedback="false">50%</answer>
+          <answer idAns="2" AnsType="txt" feedback="false">20%</answer>
+        </answers>
+      </question>
+      <question id="5">
+        <questionText>כמה אחוזים הם 5 מתוך 10?</questionText>
+        <img>
+        </img>
+        <answers>
+          <answer idAns="0" AnsType="txt" feedback="true">50%</answer>
+          <answer idAns="1" AnsType="txt" feedback="false">5%</answer>
+          <answer idAns="2" AnsType="txt" feedback="false">20%</answer>
+        </answers>
+      </question>
+      <question id="6">
+        <questionText>באיזו תמונה מספר הגולות הכחולות הוא 70% ממספר הגולות הכללי?</questionText>
+        <img>
+        </img>
+        <answers>
+          <answer idAns="0" AnsType="img" feedback="true">06_07_21-20_59_39_98851.png</answer>
+          <answer idAns="1" AnsType="img" feedback="false">06_07_21-20_59_39_99152.png</answer>
+          <answer idAns="2" AnsType="img" feedback="false">06_07_21-20_59_46_14643.png</answer>
+          <answer idAns="3" AnsType="img" feedback="false">06_07_21-20_59_50_48944.png</answer>
+          <answer idAns="4" AnsType="img" feedback="false">06_07_21-21_00_38_96745.png</answer>
+        </answers>
+      </question>
+      <question id="7">
+        <questionText>מחיר ספר עלה מ-25 שקלים ל-30 שקלים. בכמה אחוזים מחיר הספר עלה?</questionText>
+        <img>
+        </img>
+        <answers>
+          <answer idAns="0" AnsType="txt" feedback="true">20%</answer>
+          <answer idAns="1" AnsType="txt" feedback="false">5%</answer>
+          <answer idAns="2" AnsType="txt" feedback="false">30%</answer>
+          <answer idAns="3" AnsType="txt" feedback="false">25%</answer>
+        </answers>
+      </question>
+      <question id="8">
+        <questionText>אחוז הבנים בבית הספר הוא 42%, כלומר, אחוז הבנות...?</questionText>
+        <img>
+        </img>
+        <answers>
+          <answer idAns="0" AnsType="txt" feedback="true">גדול מאחוז הבנים</answer>
+          <answer idAns="1" AnsType="txt" feedback="false">קטן מאחוז הבנים</answer>
+          <answer idAns="2" AnsType="txt" feedback="false">שווה לאחוז הבנים</answer>
+        </answers>
+      </question>
+      <question id="9">
+        <questionText>איזה מהחלקים מייצג 10% מהעוגה?</questionText>
+        <img>06_07_21-21_05_34_51820.png</img>
+        <answers>
+          <answer idAns="0" AnsType="txt" feedback="true">החלק הכתום</answer>
+          <answer idAns="1" AnsType="txt" feedback="false">החלק הצהוב</answer>
+          <answer idAns="2" AnsType="txt" feedback="false">החלק הכחול</answer>
+          <answer idAns="3" AnsType="txt" feedback="false">החלק האפור</answer>
+        </answers>
+      </question>
+    </questions>
+  </Game>
+  <Game GameCode="1000" isPublish="True" timePerQuest="30">
+    <GameSubject>תורה - בראשית</GameSubject>
+    <questions>
+      <question id="1">
+        <questionText>מהו החומש הראשון מבין חמשת חומשי תורה?</questionText>
+        <img>
+        </img>
+        <answers>
+          <answer idAns="0" AnsType="txt" feedback="true">בראשית</answer>
+          <answer idAns="1" AnsType="txt" feedback="false">שמות</answer>
+          <answer idAns="2" AnsType="txt" feedback="false">ויקרא</answer>
+          <answer idAns="3" AnsType="txt" feedback="false">במדבר</answer>
+          <answer idAns="4" AnsType="txt" feedback="false">דברים</answer>
+        </answers>
+      </question>
+      <question id="2">
+        <questionText>יצחק וישמעאל היו בניו של?</questionText>
+        <img>
+        </img>
+        <answers>
+          <answer idAns="0" AnsType="txt" feedback="true">אברהם אבינו</answer>
+          <answer idAns="1" AnsType="txt" feedback="false">אדם הראשון</answer>
+          <answer idAns="2" AnsType="txt" feedback="false">משה רבנו</answer>
+          <answer idAns="3" AnsType="txt" feedback="false">יעקב אבינו</answer>
+        </answers>
+      </question>
+      <question id="3">
+        <questionText>מה נברא ביום השלישי לבריאת העולם?</questionText>
+        <img>
+        </img>
+        <answers>
+          <answer idAns="0" AnsType="img" feedback="true">06_07_21-20_17_40_46351.jpg</answer>
+          <answer idAns="1" AnsType="img" feedback="false">06_07_21-20_17_40_46742.png</answer>
+          <answer idAns="2" AnsType="img" feedback="false">06_07_21-20_17_44_64583.png</answer>
+          <answer idAns="3" AnsType="img" feedback="false">06_07_21-20_17_49_28914.png</answer>
+        </answers>
+      </question>
+      <question id="4">
+        <questionText>על איזה אירוע מדובר בתמונה?</questionText>
+        <img>06_07_21-20_24_16_13350.png</img>
+        <answers>
+          <answer idAns="0" AnsType="txt" feedback="true">המבול</answer>
+          <answer idAns="1" AnsType="txt" feedback="false">בריאת העולם</answer>
+          <answer idAns="2" AnsType="txt" feedback="false">בריחת יעקב לדודו לבן</answer>
+        </answers>
+      </question>
+      <question id="5">
+        <questionText>מה ניסו לעשות אנשי בבל?</questionText>
+        <img>
+        </img>
+        <answers>
+          <answer idAns="0" AnsType="txt" feedback="true">לבנות מגדל גבוה שיגיע לשמיים</answer>
+          <answer idAns="1" AnsType="txt" feedback="false">לבנות עגל מזהב</answer>
+          <answer idAns="2" AnsType="txt" feedback="false">לחצות את ים סוף</answer>
+        </answers>
+      </question>
+      <question id="6">
+        <questionText>יעקב מגיע להתברך: ויגש יעקב אל יצחק אביו וימשהו ויאמר... מהו המשך הפסוק?</questionText>
+        <img>
+        </img>
+        <answers>
+          <answer idAns="0" AnsType="txt" feedback="true">"הקול קול יעקב והידיים ידי עשיו"</answer>
+          <answer idAns="1" AnsType="txt" feedback="false">"שא נא ענייך וראה כל העתודים"</answer>
+          <answer idAns="2" AnsType="txt" feedback="false">"אל תשלח ידך אל הנער"</answer>
+          <answer idAns="3" AnsType="txt" feedback="false">"ישימך אלוהים כאפרים וכמנשה ויוסף לך שלום"</answer>
+          <answer idAns="4" AnsType="txt" feedback="false">"בראשית ברא אלוהים את השמיים ואת הארץ"</answer>
+        </answers>
+      </question>
+      <question id="7">
+        <questionText>מה הקשר בין רחל ולאה?</questionText>
+        <img>
+        </img>
+        <answers>
+          <answer idAns="0" AnsType="txt" feedback="true">אחיות</answer>
+          <answer idAns="1" AnsType="txt" feedback="false">חברות הכי טובות</answer>
+          <answer idAns="2" AnsType="txt" feedback="false">בנות דודות</answer>
+          <answer idAns="3" AnsType="txt" feedback="false">אמא ובת</answer>
+        </answers>
+      </question>
+      <question id="8">
+        <questionText>למה נחרבה סדום?</questionText>
+        <img>
+        </img>
+        <answers>
+          <answer idAns="0" AnsType="txt" feedback="true">בגלל שתושביה הרבו לחטוא</answer>
+          <answer idAns="1" AnsType="txt" feedback="false">בגלל שלא נתנו צדקה</answer>
+          <answer idAns="2" AnsType="txt" feedback="false">בגלל שאשת לוט הסתכלה לאחור</answer>
+        </answers>
+      </question>
+      <question id="9">
+        <questionText>על פי התמונה איזה חלום חלם יוסף?</questionText>
+        <img>06_07_21-20_30_09_81830.jpg</img>
+        <answers>
+          <answer idAns="0" AnsType="txt" feedback="true">יוסף חולם ש 11 אלומות משתחוות לו</answer>
+          <answer idAns="1" AnsType="txt" feedback="false">יוסף חולם שיש רעב</answer>
+          <answer idAns="2" AnsType="txt" feedback="false">יוסף חולם על כותנות הפסים</answer>
+          <answer idAns="3" AnsType="txt" feedback="false">יוסף חולם על הולדת בנימין</answer>
+        </answers>
+      </question>
+      <question id="10">
+        <questionText>מי משחרר את יוסף מהכלא?</questionText>
+        <img>
+        </img>
+        <answers>
+          <answer idAns="0" AnsType="txt" feedback="true">שר המשקים</answer>
+          <answer idAns="1" AnsType="txt" feedback="false">שר האופים</answer>
+          <answer idAns="2" AnsType="txt" feedback="false">שר האוצר</answer>
+        </answers>
+      </question>
+      <question id="11">
+        <questionText>היכן קבורה רחל?</questionText>
+        <img>
+        </img>
+        <answers>
+          <answer idAns="0" AnsType="txt" feedback="true">בית לחם</answer>
+          <answer idAns="1" AnsType="txt" feedback="false">הר הרצל</answer>
+          <answer idAns="2" AnsType="img" feedback="false">06_07_21-20_46_41_74953.jpg</answer>
+          <answer idAns="3" AnsType="img" feedback="false">06_07_21-20_46_46_93724.jpg</answer>
+        </answers>
+      </question>
+      <question id="12">
+        <questionText>מי הרג את הבל?</questionText>
+        <img>
+        </img>
+        <answers>
+          <answer idAns="0" AnsType="txt" feedback="true">קין אחיו</answer>
+          <answer idAns="1" AnsType="txt" feedback="false">חוה אימו</answer>
+          <answer idAns="2" AnsType="txt" feedback="false">הנחש</answer>
+        </answers>
+      </question>
+    </questions>
+  </Game>
+</WildWestGame>

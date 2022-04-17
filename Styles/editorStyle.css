@@ -1,0 +1,987 @@
+﻿/*------------------------------------------------------------------------> //כללי*/
+/*הטמעת פונט*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*הגדרות עיצוב כלליות לכל העמודים*/
+body {
+    direction: rtl;
+    font-family: 'Rubik', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../image/edit_page.png');
+    max-width:100%;
+}
+/*כותרות עמודים*/
+.signs {
+    margin-right: 480px;
+    margin-top: 10px;
+    width: 250px;
+}
+
+#picOut {
+    opacity: 1;
+    width: 1%;
+    height: 1%;
+    z-index: 6;
+    margin-right: 40px;
+    margin-top: -30px
+}
+/*-------------------------------------------מצב עריכת תמונה*/
+#picPanel {
+    display: inline-block;
+    margin-top: -20px;
+}
+
+#picPanel1, #picPanel2 {
+    display: inline-block;
+    margin-top: -10px;
+    position: relative;
+}
+
+#picPanel3, #picPanel4, #picPanel5 {
+    display: inline-block;
+    margin-top: -10px;
+    position:relative;
+
+}
+
+#glass0, #editPic0, #deletPic0 {
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+}
+
+
+#glass1, #editPic1, #deletPic1, #glass2, #editPic2, #deletPic2, #glass3, #editPic3, #deletPic3,
+#glass4, #editPic4, #deletPic4, #glass5, #editPic5, #deletPic5 {
+    width: 12px;
+    height: 12px;
+    margin-top: 2px;
+
+}
+
+.showElemant {
+    visibility: visible;
+}
+
+.hideElemant {
+    visibility: hidden;
+}
+
+#signEdit {
+    margin-right: 480px;
+    width: 250px;
+}
+
+#myGamesSign {
+    margin-right: 480px;
+    width: 250px;
+    margin-top: 10px
+}
+
+iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+#gameArea {
+    overflow: hidden;
+    position: relative;
+    height: 80vh;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.hide {
+    display: none;
+}
+
+header {
+    background-color: #AC4238;
+    width: 101.2%;
+    height: 30px;
+    /*    position: relative;
+*/ direction: rtl;
+    display: block;
+    direction: rtl;
+    z-index: 3;
+    margin-top: -9px;
+    margin-right: -7px;
+}
+
+/*לוגו*/
+#logo {
+    padding: 5px 15px;
+    direction: rtl;
+    margin-top: -5px;
+    margin-right: -10px;
+}
+
+.link {
+    margin-top: -120px;
+    width: 300px;
+    font-size: 12pt;
+    margin-right: 410px;
+    cursor: pointer;
+}
+
+#aboutDiv {
+    margin-top: -25px;
+}
+
+.link2 {
+    margin-top: 10px;
+    font-size: 10pt;
+    margin-right: 380px;
+    cursor: pointer;
+}
+
+.closeAbout {
+    margin-right: 950px;
+    font-size: 16pt;
+    font-weight: 700;
+    position: relative;
+    top: 50px;
+    cursor: pointer;
+    color: white;
+}
+
+nav {
+    margin-top: -57px;
+    margin-left: 10px;
+    direction: rtl;
+}
+
+    nav ul {
+        list-style: none;
+        direction: rtl;
+    }
+
+        nav ul li {
+            display: inline-block;
+            float: left;
+            direction: rtl;
+            padding-left: 10px;
+        }
+
+            nav ul li a {
+                display: block;
+                color: white;
+                text-align: center;
+                font-weight: 400;
+                font-size: 16pt;
+                padding-top: 5px;
+                direction: rtl;
+                text-decoration: none;
+            }
+
+                nav ul li a:hover {
+                    font-weight: 700;
+                    cursor: pointer;
+                    direction: rtl;
+                    text-decoration: underline;
+                }
+
+#help {
+    color: gray;
+    cursor: no-drop;
+}
+
+.popUp {
+    position: absolute;
+    margin-top: -45px;
+    margin-right: 140px;
+    z-index: 4;
+}
+
+
+.bounceInDown {
+    -webkit-animation-name: bounceInDown;
+    animation-name: bounceInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes bounceInDown {
+    0%, 60%, 75%, 90%, 100% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -3000px, 0);
+        transform: translate3d(0, -3000px, 0);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 25px, 0);
+        transform: translate3d(0, 25px, 0);
+    }
+
+    75% {
+        -webkit-transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0);
+    }
+
+    90% {
+        -webkit-transform: translate3d(0, 5px, 0);
+        transform: translate3d(0, 5px, 0);
+    }
+
+    100% {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes bounceInDown {
+    0%, 60%, 75%, 90%, 100% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -3000px, 0);
+        transform: translate3d(0, -3000px, 0);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 25px, 0);
+        transform: translate3d(0, 25px, 0);
+    }
+
+    75% {
+        -webkit-transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0);
+    }
+
+    90% {
+        -webkit-transform: translate3d(0, 5px, 0);
+        transform: translate3d(0, 5px, 0);
+    }
+
+    100% {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+
+/*------------------------------------------------------------------------> //login*/
+#loginPage {
+    direction: rtl;
+    font-family: 'Rubik', sans-serif;
+    background-image: url('../image/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*כותרת*/
+#title {
+    margin-top: 50px;
+    margin-right: 370px;
+    width: 500px;
+}
+/*רקע למסך כניסה*/
+#whiteBK {
+    background-color: white;
+    margin-right: 430px;
+    margin-top: 40px;
+    text-align: center;
+    width: 377px;
+    height: 300px;
+    border-radius: 20PX;
+}
+/*כותרות תיבות טקסט*/
+.loginTXT {
+    font-size: 16pt;
+    font-weight: bold;
+    line-height: 1.6;
+}
+/*טקסט בתיבת טקסט*/
+.textBoxLogin {
+    border-radius: 5px;
+    height: 20px;
+    width: 180px;
+    font-size: 14pt;
+    text-align: center;
+}
+/*התראת נתונים שגויים*/
+#alert_login {
+    color: red;
+    font-size: 12pt;
+    font-weight: 400;
+}
+/*כפתור כניסה*/
+#EnterEditor {
+    margin-top: 5px;
+    opacity: 0.5;
+}
+
+/*------------------------------------------------------------------------> //עמוד ההגדרות*/
+/*רקע למסך הגדרות*/
+#settingBK {
+    background-color: #EADABE;
+    margin-right: 390px;
+    margin-top: 40px;
+    text-align: right;
+    width: 377px;
+    height: 300px;
+    border-radius: 30PX;
+}
+/*כותרות*/
+.settingTXT {
+    font-size: 14pt;
+    font-weight: bold;
+    line-height: 1.6;
+    display: inline;
+    text-align: right;
+    margin-right: 50px;
+}
+/*תיבת טקסט*/
+.textBoxGAME {
+    border-radius: 5px;
+    height: 30px;
+    width: 250px;
+    font-size: 14pt;
+    text-align: right;
+    font-family: 'Rubik', sans-serif;
+    margin-top: 20px;
+    display: inline;
+}
+/*רשימה נגללת*/
+.settingTime {
+    height: 30px;
+    width: 180px;
+    font-size: 14pt;
+    text-align: right;
+    font-family: 'Rubik', sans-serif;
+    margin-top: 20px;
+}
+/*כפתורי הגדרות*/
+.gameBTN_setting {
+    background-color: #197282;
+    color: white;
+    font-size: 16pt;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    border-block-color: #197282;
+    display: inline;
+    margin-top: 30px;
+    margin-right: 60px;
+    cursor: pointer;
+}
+/*ספירת תווים*/
+#CharsNumError {
+    font-size: 10pt;
+    margin-right: 340px;
+}
+
+#saveChanges {
+    opacity: 1;
+}
+/*------------------------------------------------------------------------> //עמוד המשחקים שלי*/
+.empty {
+    color: #767171;
+    height: 25px;
+    background-color: #EADABE;
+    width: 300px;
+}
+
+#GridView1 td:first-child {
+    text-align: right;
+}
+
+#GridView1 th:first-child {
+    width: 350px;
+}
+
+#GridView1 th:nth-child(2) {
+    width: 80px;
+}
+
+#GridView1 th:nth-child(3) {
+    width: 30px;
+}
+
+#GridView1 th:nth-child(4), #GridView1 th:nth-child(5) {
+    width: 20px;
+}
+
+#GridView1 th:nth-child(4), #GridView1 th:nth-child(6) {
+    width: 50px;
+}
+/*כותרת תיבת טקסט*/
+#gameNAME {
+    font-weight: bold;
+    display: inline;
+}
+
+#newGameChars {
+    margin-right: 275px;
+    font-size: 10pt;
+}
+/*טבלת משחקים*/
+#GridView1 {
+    margin-right: 270px;
+    text-align: center;
+    border-color: black;
+    /*    margin-top: 10px;
+*/
+}
+
+    #GridView1 td {
+        line-height: 1
+    }
+/*פאנל יצירת משחק*/
+#newGAME {
+    margin-right: 270px;
+    margin-top: 10px;
+}
+
+#createGame {
+    opacity: 0.5
+}
+
+.gameNameTXT {
+    text-align: right;
+}
+/*כפתור צור משחק*/
+.gameBTN {
+    background-color: #197282;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+    border-block-color: #197282;
+    cursor: pointer;
+}
+
+input[type=checkbox] {
+    position: relative;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+    input[type=checkbox]:after {
+        display: block;
+        content: "";
+        position: absolute;
+       
+  top:-3px;
+  right:-3px;
+        visibility: visible;
+        height: 18px;
+        width: 18px;
+        text-align: center ;
+        border-radius: 4px;
+        background: #E2A76B;
+        cursor: pointer;
+        border: 1px solid #822919;
+    }
+
+    input[type=checkbox]:checked:after {
+        content: ' \002714';
+        background: #822919;
+        color:white;
+        border: 1px solid #822919;
+    }
+
+
+
+/*-----------------------------------------------------------------------------------------------עמוד עריכה*/
+#form1 {
+    margin-top: -10px;
+    /*display: inline-block;*/
+}
+
+.editBTN {
+    background-color: #E2A76B;
+    color: black;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+    border-block-color: #197282;
+    cursor: pointer;
+}
+
+/*פקדים להגדלת,עריכת ומחיקת תמונה שהועלתה*/
+.imageOpptions {
+    width: 10px;
+    height: 10px;
+    display: none;
+    cursor: pointer;
+}
+/*רקע לכותרת מאגר שאלות*/
+#tableBox {
+    width: 500px;
+    height: 20px;
+    border: 1px solid black;
+    background-color: #AC4238;
+}
+/*מאגר שאלות*/
+#tbleTitle {
+    font-family: Rubik;
+    font-size: 12pt;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+    margin-right: 210px;
+}
+
+.glassBigImg {
+    width: 100px;
+    height: 100px;
+}
+
+#img_glass {
+    z-index: 5;
+    margin-right: 50px;
+}
+
+/*העלמת פקדי העלאת תמונה*/
+#FileUpload0, #FileUpload1, #FileUpload2, #FileUpload3, #FileUpload4, #FileUpload5 {
+    visibility: hidden;
+}
+/*קביעת גודל לתמונה גזע שאלה */
+#ImageforUpload0 {
+    width: 100px;
+    height: 100px;
+}
+
+/*קביעת גודל לתמונות מסיחים*/
+#ImageforUpload1, #ImageforUpload2, #ImageforUpload3, #ImageforUpload4, #ImageforUpload5 {
+    width: 50px;
+    height: 50px;
+    margin-right: -10px
+}
+
+.DelPic {
+    margin-top: 5px
+}
+
+#GameSubjectTXT {
+    margin-top: -15px;
+    font-size: 16pt;
+    font-weight: bold;
+    color: #AC4238;
+}
+
+#questionBox, #correctBox, #inCorrecetBox, #GameSubjectTXT {
+    margin-right: 30px;
+}
+
+.tableStatus {
+    font-weight: 700;
+    font-size: 10pt;
+    margin-right: 210px;
+    direction:ltr;
+}
+
+#bold {
+    color: #822919;
+}
+
+
+#table {
+    margin-left: 50px;
+    /* margin-top: -320px;*/
+    float: left;
+}
+
+#GridView2 {
+    font-size: 10pt;
+    text-align: center;
+}
+
+    #GridView2#question {
+        font-weight: 700;
+    }
+
+#question {
+    border-radius: 5px;
+    font-size: 11pt;
+    text-align: right;
+    margin-top: -80px;
+}
+
+
+
+#GameSubjectTXT {
+    font-weight: 700;
+    color: #822919;
+    font-size: 16pt;
+}
+
+.QTitle, .ATitle {
+    font-weight: 700;
+    font-size: 11pt;
+    display: block;
+}
+
+
+#answers {
+    margin-top: -10px;
+}
+
+#worngAnswers {
+    margin-top: 5px;
+    display: block;
+}
+
+.editTextBox {
+    border-radius: 5px;
+    font-size: 11pt;
+    text-align: right;
+    margin-top: 10px;
+    font-family: Rubik;
+}
+
+
+
+
+#questionChars {
+    font-size: 10pt;
+    margin-right: 300px;
+}
+
+#backToMyGmaes {
+    margin-inline-start: 800px;
+}
+
+.charsNum {
+    font-size: 9pt;
+    margin-top: -10px;
+    margin-right: 310px;
+}
+
+.charsNumW {
+    font-size: 9pt;
+    margin-top: -10px;
+    margin-right: 340px;
+    width: 162px;
+}
+
+#editForm {
+    display: block;
+}
+
+#editPageDisplay {
+    display: inline
+}
+
+
+.formPanel {
+    display: inline-block;
+    margin-top: -5px;
+}
+
+.formPanelA {
+    display: inline-block;
+    margin-top: -5px;
+    width: 538px;
+}
+
+#PanelAns2, #PanelAns3, #PanelAns4 {
+    margin-top: 10px;
+}
+
+#picTitle {
+    margin-right: -95px;
+}
+
+.or {
+    font-size: 16pt;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-top: -10px
+}
+
+#buttons {
+    margin-top: 10px;
+    display: inline-block;
+}
+
+
+
+#GridView2 td:nth-child(2) {
+    text-align: right;
+}
+
+#addingAnswer, #savingQuestion {
+    opacity: 0.5;
+}
+
+#GridView2 th:nth-child(2) {
+    width: 400px;
+}
+
+#GridView2 th:nth-child(3), #GridView2 th:nth-child(4) {
+    width: 15px;
+}
+.publish {
+    color: green;
+    font-weight: 700;
+    font-size: 10pt;
+    margin-right: 365px;
+    direction: ltr;
+}
+
+
+.enebledBTN{
+    opacity: 1;
+}
+
+.disabledBTN {
+    opacity: 0.5;
+}
+
+/*--------------------------------------------------התראות*/
+.AlertClass {
+    width: 350px;
+    height: 210px;
+    background-color: #EADABE;
+    border: 2px solid #822919;
+    border-radius: 30px;
+    z-index: 5;
+    text-align: center;
+    margin-right: 440px;
+    position: absolute;
+    margin-top: 60px;
+    display:inline-block;
+}
+
+    .showAlert {
+        position: fixed;
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.5);
+        z-index: 1;
+        cursor: pointer;
+    }
+
+.hideAlert {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+    cursor: pointer;
+}
+
+.AlertBTN {
+    background-color: #197282;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+    border-block-color: #197282;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 50px;
+    font-size:14pt;
+    width:130px;
+    height:230px;
+    margin-right:10px;
+
+}
+
+.alertLabel {
+    line-break: normal;
+    display: inline-block;
+    padding-top: 40px;
+    font-weight: 700;
+    font-size: 14pt;
+}
+
+
+
+#Alert_deleteGame {
+    background-color: white;
+    margin-top:150px;
+    margin-right:440px;
+}
+
+#deleteGame_label {
+    padding-right:20px;
+}
+
+
+/*מעבר עכבר על צ'ק בוקס*/
+.tooltip_myGames {
+    position: relative;
+    display: inline-block;
+}
+
+    .tooltip_myGames .tooltiptext_myGames {
+        visibility: hidden;
+        font-size: 9pt;
+        height: 50px;
+        background-color: white;
+        border: 1px solid #822919;
+        text-align: center;
+        border-radius: 5px;
+        position: absolute;
+        top: 10px;
+        left: 30px;
+        z-index: 5;
+        font-weight: 500;
+        width: 100px !important;
+        line-break:loose;
+        padding: 5px;
+
+    }
+
+
+    .tooltip_myGames:hover .tooltiptext_myGames {
+        visibility: visible;
+    }
+
+    .tooltip_myGames .tooltiptext_myGames_noActive {
+        visibility: hidden;
+        font-size: 9pt;
+        height: 50px;
+        background-color: white;
+        border: 1px solid #822919;
+        text-align: center;
+        border-radius: 5px;
+        position: absolute;
+        top: 10px;
+        left: 30px;
+        z-index: 5;
+        font-weight: 500;
+        width: 100px !important;
+        line-break: loose;
+        padding: 5px;
+    }
+
+
+    .tooltip_myGames:hover .tooltiptext_myGames_noActive {
+        visibility: hidden;
+    }
+
+   
+
+
+/*מעבר עכבר על כפתורי שמירה*/
+.tooltip_buttons {
+    position: relative;
+    display: inline-block;
+}
+
+    .tooltip_buttons .tooltiptext_buttons {
+        visibility: hidden;
+        font-size: 9pt;
+        height: 30px;
+        background-color: #EADABE;
+        border: 1px solid #822919;
+        text-align: center;
+        border-radius: 5px;
+        position: absolute;
+        top: -35px;
+        left: -60px;
+        z-index: 5;
+        font-weight: 500;
+        width: 130px !important;
+        padding: 5px;
+        
+    }
+    .tooltip_buttons:hover .tooltiptext_buttons {
+        visibility: visible;
+    }
+
+    .tooltip_buttons .tooltiptext_buttons_noActive {
+        visibility: hidden;
+        font-size: 9pt;
+        height: 30px;
+        background-color: #EADABE;
+        border: 1px solid #822919;
+        text-align: center;
+        border-radius: 5px;
+        position: absolute;
+        top: -35px;
+        left: -60px;
+        z-index: 5;
+        font-weight: 500;
+        width: 130px !important;
+        padding: 5px;
+    }
+
+    .tooltip_buttons:hover .tooltiptext_buttons_noActive {
+        visibility: hidden;
+    }
+
+/*מעבר עכבר על כפתור הוספת מסיח*/
+.tooltip_addbutton {
+    position: relative;
+    display: inline-block;
+}
+
+    .tooltip_addbutton .tooltiptext_addbutton {
+        visibility: hidden;
+        font-size: 9pt;
+        height: 30px;
+        background-color: #EADABE;
+        border: 1px solid #822919;
+        text-align: center;
+        border-radius: 5px;
+        position: absolute;
+        top: -35px;
+        left: -30px;
+        z-index: 5;
+        font-weight: 500;
+        width: 90px !important;
+        padding: 5px;
+    }
+
+    .tooltip_addbutton:hover .tooltiptext_addbutton {
+        visibility: visible;
+    }
+
+    .tooltip_addbutton .tooltiptext_addbutton_noActive {
+        visibility: hidden;
+        font-size: 9pt;
+        height: 30px;
+        background-color: #EADABE;
+        border: 1px solid #822919;
+        text-align: center;
+        border-radius: 5px;
+        position: absolute;
+        top: -35px;
+        left: -30px;
+        z-index: 5;
+        font-weight: 500;
+        width: 90px !important;
+        padding: 5px;
+    }
+
+    .tooltip_addbutton:hover .tooltiptext_addbutton_noActive {
+        visibility: hidden;
+    }
+
+.counterChars{
+    font-family: Rubik;
+}
+
+

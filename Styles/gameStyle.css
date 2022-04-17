@@ -1,0 +1,203 @@
+﻿body {
+    direction: rtl;
+    font-family: 'Rubik', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../image/edit_page.png');
+    max-width: 100%;
+}
+
+iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+#gameArea {
+    overflow: hidden;
+    position: relative;
+    height: 93.9vh;
+    width: 99vw;
+    margin: 0 auto;
+}
+
+.hide {
+    display: none;
+}
+
+header {
+    background-color: #AC4238;
+    width: 101.2%;
+    height: 30px;
+    display: block;
+    direction: rtl;
+    z-index: 3;
+    margin-top: -9px;
+    margin-right: -7px;
+}
+
+/*לוגו*/
+#logo {
+    padding: 5px 15px;
+    direction: rtl;
+    margin-top: -5px;
+    margin-right: -10px;
+}
+
+.link {
+    margin-top: -120px;
+    width: 300px;
+    font-size: 12pt;
+    margin-right: 410px;
+    cursor: pointer;
+}
+
+#aboutDiv, #howToPlayDiv {
+    margin-top: -25px;
+}
+
+.link2 {
+    margin-top: 10px;
+    font-size: 10pt;
+    margin-right: 380px;
+    cursor: pointer;
+}
+
+.closeAbout, .closeHowToPlay {
+    margin-right: 950px;
+    font-size: 16pt;
+    font-weight: 700;
+    position: relative;
+    top: 50px;
+    cursor: pointer;
+    color: white;
+}
+
+nav {
+    margin-top: -57px;
+    margin-left: 10px;
+    direction: rtl;
+}
+
+    nav ul {
+        list-style: none;
+        direction: rtl;
+    }
+
+        nav ul li {
+            display: inline-block;
+            float: left;
+            direction: rtl;
+            padding-left: 10px;
+        }
+
+            nav ul li a {
+                display: block;
+                color: white;
+                text-align: center;
+                font-weight: 400;
+                font-size: 16pt;
+                padding-top: 5px;
+                direction: rtl;
+                text-decoration: none;
+            }
+
+                nav ul li a:hover {
+                    font-weight: 700;
+                    cursor: pointer;
+                    direction: rtl;
+                    text-decoration: underline;
+                }
+
+#help {
+    color: gray;
+    cursor: no-drop;
+}
+
+.popUp {
+    position: absolute;
+    margin-top: -45px;
+    margin-right: 135px;
+    z-index: 4;
+}
+
+
+.bounceInDown {
+    -webkit-animation-name: bounceInDown;
+    animation-name: bounceInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes bounceInDown {
+    0%, 60%, 75%, 90%, 100% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -3000px, 0);
+        transform: translate3d(0, -3000px, 0);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 25px, 0);
+        transform: translate3d(0, 25px, 0);
+    }
+
+    75% {
+        -webkit-transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0);
+    }
+
+    90% {
+        -webkit-transform: translate3d(0, 5px, 0);
+        transform: translate3d(0, 5px, 0);
+    }
+
+    100% {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes bounceInDown {
+    0%, 60%, 75%, 90%, 100% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -3000px, 0);
+        transform: translate3d(0, -3000px, 0);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 25px, 0);
+        transform: translate3d(0, 25px, 0);
+    }
+
+    75% {
+        -webkit-transform: translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0);
+    }
+
+    90% {
+        -webkit-transform: translate3d(0, 5px, 0);
+        transform: translate3d(0, 5px, 0);
+    }
+
+    100% {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
